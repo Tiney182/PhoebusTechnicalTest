@@ -1,9 +1,0 @@
-INSERT INTO CUSTOMER (CUSTOMER_ID)
-VALUES (10),
-       (11),
-       (12);
-
-INSERT INTO ACCOUNT (ACCOUNT_ID, CUSTOMER_ID)
-VALUES (1, 10),
-       (2, 11),
-       (3, 12);
