@@ -25,5 +25,8 @@ public class CustomerEntity {
 
   @OneToMany List<AccountEntity> accountEntities;
 
-  Date testDate = new Date();
+  String foreName;
+  String surName;
+  Date dateOfBirth;
+
 }

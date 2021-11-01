@@ -18,4 +18,5 @@ import javax.persistence.Table;
 @Table(name = "ACCOUNT")
 public class AccountEntity {
   @Id Long accountId;
+  int accountNumber;
 }
