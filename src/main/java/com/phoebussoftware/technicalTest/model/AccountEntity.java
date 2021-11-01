@@ -1,37 +1,21 @@
 package com.phoebussoftware.technicalTest.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 @Entity
 @Table(name = "ACCOUNT")
 public class AccountEntity {
   @Id Long accountId;
-
-  @OneToOne CustomerEntity customer;
-
-  public AccountEntity(Long accountId, CustomerEntity customer) {
-    this.accountId = accountId;
-    this.customer = customer;
-  }
-
-  public AccountEntity() {}
-
-  public Long getAccountId() {
-    return accountId;
-  }
-
-  public void setAccountId(Long accountId) {
-    this.accountId = accountId;
-  }
-
-  public CustomerEntity getCustomer() {
-    return customer;
-  }
-
-  public void setCustomer(CustomerEntity customer) {
-    this.customer = customer;
-  }
 }
