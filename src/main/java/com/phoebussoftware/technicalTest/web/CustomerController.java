@@ -21,7 +21,8 @@ public class CustomerController {
   }
 
   @GetMapping("/account/{customerId}")
-  public ResponseEntity<List<AccountDTO>> getAccountsByCustomerId(@PathVariable Integer customerId) {
+  public ResponseEntity<List<AccountDTO>> getAccountsByCustomerId(
+      @PathVariable Integer customerId) {
     List<AccountDTO> accountDTOS = List.of(AccountDTO.builder().build());
     return new ResponseEntity<>(accountDTOS, HttpStatus.OK);
   }

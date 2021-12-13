@@ -12,6 +12,6 @@ import java.util.List;
 @NoArgsConstructor
 @Builder
 public class CustomerDTO {
-    Long customerId;
-    List<AccountDTO> accountDTOS;
+  Long customerId;
+  List<AccountDTO> accountDTOS;
 }

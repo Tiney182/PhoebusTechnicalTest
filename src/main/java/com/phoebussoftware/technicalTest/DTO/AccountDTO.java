@@ -10,6 +10,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 public class AccountDTO {
-    Long accountId;
-    CustomerDTO customerDTO;
+  Long accountId;
+  CustomerDTO customerDTO;
 }
