@@ -21,9 +21,8 @@ import java.util.Set;
 @Entity
 @Table(name = "CUSTOMER")
 public class CustomerEntity {
-  @Id Long customerId;
 
-  @OneToMany List<AccountEntity> accountEntities;
+  @Id Long customerId;
 
   Date testDate = new Date();
 }
